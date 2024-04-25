@@ -1,5 +1,4 @@
 /* eslint-disable no-underscore-dangle */
-// 5-building.js
 
 class Building {
   constructor(sqft) {

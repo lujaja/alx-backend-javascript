@@ -1,14 +1,16 @@
-import Car from './10-car.js';
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-underscore-dangle */
+import Car from './10-car';
 
 class EVCar extends Car {
-    constructor(brand, motor, color, range) {
-        super(brand, motor, color);
-        this._range = range;
-    }
+  constructor(brand, motor, color, range) {
+    super(brand, motor, color);
+    this._range = range;
+  }
 
-    cloneCar() {
-        return new Car(this._brand, this._motor, this._color);
-    }
+  cloneCar() {
+    return new Car();
+  }
 }
 
 export default EVCar;

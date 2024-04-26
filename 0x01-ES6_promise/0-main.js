@@ -15,11 +15,6 @@ p.then((message) => {
 })
 */
 
-import asyncUploadUser from "./100-await";
+import handleProfileSignup from "./3-all";
 
-const test = async () => {
-    const value = await asyncUploadUser();
-    console.log(value);
-};
-
-test();
+handleProfileSignup();
